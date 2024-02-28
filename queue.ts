@@ -12,7 +12,8 @@ export default class Queue {
     if (this.list.length === 0) {
       return;
     }
-    this.list.shift();
+    const val = this.list.shift();
+    return val;
   }
 
   public length(): number {
